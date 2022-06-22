@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  font-size: 16px;
 
   .header-logo {
     grid-column: 1/-1;
@@ -26,7 +27,7 @@
     grid-row: 1 / span 1;
     justify-self: start;
 
-    Ul {
+    ul {
       display: flex;
       align-items: center;
       gap: 8px;
@@ -42,13 +43,32 @@
       display: flex;
       align-items: center;
       gap: 8px;
+    }
 
-      li:nth-child(2) {
-        a {
-          display: flex;
-          align-items: center;
-          gap: 8px;
+    li:nth-child(1) {
+      a {
+        position: relative;
+
+        .qty {
+          position: absolute;
+          top: -12px;
+          right: -12px;
+          min-width: 18px;
+          height: 18px;
+          border-radius: 50%;
+          text-align: center;
+          font-size: 12px;
+          color: $white;
+          background-color: $brand-primary;
         }
+      }
+    }
+
+    li:nth-child(2) {
+      a {
+        display: flex;
+        align-items: center;
+        gap: 8px;
       }
     }
   }
@@ -63,5 +83,9 @@
   ul {
     display: flex;
     gap: 8px;
+  }
+
+  li:first-child {
+    color: $brand-primary;
   }
 }

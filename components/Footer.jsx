@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="footer">
       <section className="footer-primary">
         <div className="footer-primary-inner container">
-          <nav className="footer-nav">
+          <nav className="footer-nav mt-5">
             <ul>
               <li>
                 <a href="https://x.ro" title="Information">
@@ -175,22 +175,25 @@ export default function Footer() {
             </p>
           </section>
 
-          <section className="footer-support">
+          <section className="footer-support mb-3">
             <ul>
               <li>
                 <a href="https://x.ro" title="Support">
+                  <i className="fa-solid fa-phone"></i>
                   Support
                 </a>
               </li>
 
               <li>
                 <a href="https://x.ro" title="Chat">
+                  <i className="fa-solid fa-comments"></i>
                   Chat
                 </a>
               </li>
 
               <li>
                 <a href="https://x.ro" title="Email">
+                  <i className="fa-solid fa-envelope"></i>
                   Email
                 </a>
               </li>

@@ -1,5 +1,8 @@
 .footer-primary {
   background-color: $brand-secondary;
+  color: $gray-tertiary;
+  font-weight: 300;
+  font-size: 14px;
 
   &-inner {
     display: grid;
@@ -19,6 +22,7 @@
     flex-wrap: wrap;
     row-gap: 43px;
     grid-area: nav;
+    text-transform: uppercase;
 
     @include media-breakpoint-up('lg') {
       flex-wrap: nowrap;
@@ -40,15 +44,55 @@
     @include media-breakpoint-up('lg') {
       align-self: end;
     }
+
+    a {
+      display: block;
+    }
+
+    p :nth-child(2) {
+      color: $brand-primary;
+    }
   }
 
-  .footer-support {
-    grid-area: support;
-    justify-self: center;
+  h1 {
+    font-weight: 300;
+    font-size: 16px;
+  }
 
-    @include media-breakpoint-up('lg') {
-      justify-self: start;
-      align-self: end;
+  h1 > span {
+    font-weight: 700;
+  }
+}
+
+.footer-support {
+  grid-area: support;
+  justify-self: center;
+  display: flex;
+
+  li {
+    display: inline-block;
+    gap: 33px;
+    margin-right: 29px;
+    transition: 0.6 ease-in-out;
+
+    a {
+      i {
+        display: block;
+        color: $brand-primary;
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 10px;
+      }
     }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  @include media-breakpoint-up('lg') {
+    justify-self: start;
+    align-self: end;
+    margin-left: 48px;
   }
 }

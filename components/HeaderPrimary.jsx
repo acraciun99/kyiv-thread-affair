@@ -29,7 +29,7 @@ export default function HeaderPrimary() {
         </ul>
       </nav>
 
-      <nav className="nav-secondary">
+      <nav className="nav-secondary mt-3">
         <ul>
           <li>
             <a href="https://pixellab.ro/" title="Glamour">

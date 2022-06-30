@@ -1,8 +1,8 @@
 .button {
   display: inline-flex;
-  background-color: $brand-primary;
+  background-color: transparent;
   text-transform: uppercase;
-  color: $white;
+  color: $brand-primary;
   text-decoration: none;
   padding: 15px 35px;
   line-height: 19px;
@@ -12,8 +12,8 @@
 
   &:hover {
     // .button hover
-    color: $brand-primary;
-    background-color: transparent;
+    color: $white;
+    background-color: $brand-primary;
   }
 
   &-large {

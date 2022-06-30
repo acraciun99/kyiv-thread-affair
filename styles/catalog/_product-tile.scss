@@ -19,4 +19,47 @@
       display: block;
     }
   }
+
+  &-title {
+    font-size: 24px;
+    color: $gray-primary;
+    font-weight: 300;
+
+    span:first-child {
+      color: $black;
+      font-weight: 500;
+    }
+
+    span:last-child {
+      color: $gray-primary;
+      font-weight: 500;
+    }
+  }
+
+  &-subtitle {
+    font-size: 18px;
+    color: $gray-primary;
+    font-weight: 300;
+  }
+
+  &-pricing {
+    .catalog-price {
+      font-size: 18px;
+      font-weight: 300;
+      color: $gray-primary;
+      text-decoration: line-through;
+    }
+
+    .price {
+      font-size: 24px;
+      font-weight: 300;
+      color: $gray-primary;
+    }
+
+    .price > span {
+      color: $brand-primary;
+      font-size: 24px;
+      font-weight: 500;
+    }
+  }
 }
